@@ -1,0 +1,86 @@
+<div class="comment" [style.width]="widthPx">
+  <div class="button-group">
+    <div class="vote">
+      <div class="upvote" (click)="upVote()">
+        <img src="../../assets/images/icon-plus.svg">
+      </div>
+      <div class="vote-content" >
+        <p><strong>{{comment["score"]}}</strong></p>
+      </div>
+      <div class="downvote" (click)="downVote()">
+        <img src="../../assets/images/icon-minus.svg">
+      </div>
+    </div>
+    <div class="button-small">
+      <div class="delete" *ngIf="isUser">
+        <img  src="../../assets/images/icon-delete.svg">
+        <p style="display: inline;"><strong>Delete</strong></p>
+      </div>
+
+      <div class="edit"  *ngIf="isUser">
+        <img  src="../../assets/images/icon-edit.svg">
+        <p style="display: inline;"><strong>Edit</strong></p>
+      </div>
+      <div class="reply" (click)="reply()" *ngIf="!isUser">
+        <img  src="../../assets/images/icon-reply.svg">
+        <p style="display: inline;"><strong>Reply</strong></p>
+      </div>
+
+    </div>
+  </div>
+
+
+    <div class="content">
+      <div class="comment-header">
+        <div class="user-avatar">
+          <img style="width: 30px;" src={{avatarUrl}}>
+        </div>
+        <div class="user-name">
+          <p><strong>{{comment["user"]["username"]}}</strong></p>
+        </div>
+        <div class="user-certificate" *ngIf="isUser">
+          <p class="user-certificate-text"><strong>you</strong></p>
+        </div>
+        <div class="comment-time">
+          <p>{{comment["createdAt"]}}</p>
+        </div>
+        <div class="delete button-big" *ngIf="isUser">
+          <img  src="../../assets/images/icon-delete.svg">
+          <p style="display: inline;"><strong>Delete</strong></p>
+        </div>
+
+        <div class="edit button-big"  *ngIf="isUser">
+          <img  src="../../assets/images/icon-edit.svg">
+          <p style="display: inline;"><strong>Edit</strong></p>
+        </div>
+        <div class="reply button-big" (click)="reply()" *ngIf="!isUser">
+          <img  src="../../assets/images/icon-reply.svg">
+          <p style="display: inline;"><strong>Reply</strong></p>
+        </div>
+      </div>
+
+      <div class="comment-content">
+        <p>{{comment["content"]}}</p>
+      </div>
+    </div>
+</div>
+
+<div class="comment comment-reply-box" *ngIf="isReply">
+  <div class="account-avatar">
+    <img src={{accountAvatarUrl}}>
+  </div>
+  <div class="reply-content">
+    <!-- <input type="text" class="reply-input"> -->
+    <textarea id={{comment.id}} class="reply-input" [style.width]="replyBoxWidth">@{{comment["user"]["username"]}}. </textarea>
+  </div>
+  <div class="reply-send" (click)="sendReply(comment.id)">
+    <p><strong>REPLY</strong></p>
+  </div>
+</div>
+
+<div class="comment-reply">
+    <div class="comment-line"></div>
+    <div class="reply-box">
+        <app-comment *ngFor="let rep of comment.replies" [comment]="rep" [width]="width - reducePixel"></app-comment>
+    </div>
+</div>

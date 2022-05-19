@@ -1,0 +1,225 @@
+.comment{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    /* width: 730px; */
+    /* height: 150px; */
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+.vote{
+    display: flex;
+    flex-direction: column;
+    width: 35px;
+    height: 97px;
+    background-color: hsl(223, 19%, 93%);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.vote-content{
+    color: hsl(238, 40%, 52%);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 30px;
+}
+
+.comment-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+/* 
+margin-auto document:
+https://stackoverflow.com/questions/32551291/in-css-flexbox-why-are-there-no-justify-items-and-justify-self-properties
+*/
+.user-name, .comment-time{
+    margin-left: 30px;
+}
+.user-certificate{
+    margin-left: 10px;
+}
+
+.user-certificate-text{ 
+    background-color: hsl(238, 40%, 52%);
+    border-radius: 2px;
+    color: white;
+}
+
+.comment-time  p{
+    color: hsl(211, 10%, 45%);
+}
+
+.reply{
+    margin-left: auto;
+    margin-right: 20px;
+    color: hsl(238, 40%, 52%);
+    cursor: pointer;
+}
+
+/* 
+Filter color 
+Document: https://stackoverflow.com/questions/42966641/how-to-transform-black-into-any-given-color-using-only-css-filters/43960991#43960991
+Calculator: https://codepen.io/sosuke/pen/Pjoqqp
+Color must be black then user calculator
+*/
+.reply:hover{
+    /* color: hsl(239, 57%, 85%); */
+    filter: brightness(0) saturate(100%) invert(74%) sepia(3%) saturate(3670%) hue-rotate(201deg) brightness(111%) contrast(87%);
+}
+
+.delete{
+    color: red;
+    cursor: pointer;
+}
+.delete:hover{
+    filter: brightness(0) saturate(100%) invert(79%) sepia(85%) saturate(1694%) hue-rotate(293deg) brightness(112%) contrast(106%);
+}
+.edit{
+    color: hsl(238, 40%, 52%);
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.edit:hover{
+    filter: brightness(0) saturate(100%) invert(74%) sepia(3%) saturate(3670%) hue-rotate(201deg) brightness(111%) contrast(87%);
+
+}
+.comment-content p{
+    margin: 0;
+    color: hsl(211, 10%, 45%);
+    padding-bottom: 10px;
+}
+
+.comment-reply{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.comment-line{
+    border-left: 3px solid hsl(223, 19%, 93%);
+    margin-left: 20px;
+}
+
+.comment-reply .reply-box app-comment .comment{
+    width: 650px;
+    margin-left: auto;
+}
+
+/* .comment-reply .reply-box app-comment:last-child .comment{
+    align-self: flex-end;
+    height: 100%;
+} */
+
+
+
+.reply-send{
+    border-radius: 15px;
+    background-color: hsl(238, 40%, 52%);
+    color: white;
+    width: 100px;
+    height: 45px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment-reply-box{
+    margin-top: 10px;
+}
+
+.account-avatar{
+    margin-left: 18px;
+    flex-grow: 1;
+
+}
+.account-avatar img{
+    width: 38px;
+}
+.reply-content{
+    flex-grow: 3;
+}
+.reply-input{
+    font-family: 'Rubik';
+    border-radius: 15px;
+    border: 0.5px solid black;
+    height: 90px;
+    margin-bottom: 10px;
+    padding: 15px 10px 10px 15px;
+    color: hsl(212, 24%, 26%);
+}
+
+.reply-send:hover{
+    background-color:hsl(239, 57%, 85%) ;
+}
+
+@media (max-width: 630px) {
+    .comment{
+        flex-direction: column;
+    }
+    .content{
+        order: 1;
+    }
+    .button-group{
+        order: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .vote{
+        display: flex;
+        flex-direction: row;
+        width: 97px;
+        height: 35px;
+    }
+
+    .downvote img{
+        margin-bottom: 3px;
+    }
+
+    .button-small{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    .button-big{
+        display: none;
+    }
+
+    .comment-line{
+        margin-left: 0;
+    }
+
+    .account-avatar img{
+        width: 40px;
+    }
+
+    .comment-reply-box{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 631px) {
+    .button-small{
+        display: none;
+    }
+
+
+}
