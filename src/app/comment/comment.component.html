@@ -2,27 +2,27 @@
   <div class="button-group">
     <div class="vote">
       <div class="upvote" (click)="upVote()">
-        <img src="../../assets/images/icon-plus.svg">
+        <img src="assets/images/icon-plus.svg">
       </div>
       <div class="vote-content" >
         <p><strong>{{comment["score"]}}</strong></p>
       </div>
       <div class="downvote" (click)="downVote()">
-        <img src="../../assets/images/icon-minus.svg">
+        <img src="assets/images/icon-minus.svg">
       </div>
     </div>
     <div class="button-small">
       <div class="delete" *ngIf="isUser">
-        <img  src="../../assets/images/icon-delete.svg">
+        <img  src="assets/images/icon-delete.svg">
         <p style="display: inline;"><strong>Delete</strong></p>
       </div>
 
       <div class="edit"  *ngIf="isUser">
-        <img  src="../../assets/images/icon-edit.svg">
+        <img  src="assets/images/icon-edit.svg">
         <p style="display: inline;"><strong>Edit</strong></p>
       </div>
       <div class="reply" (click)="reply()" *ngIf="!isUser">
-        <img  src="../../assets/images/icon-reply.svg">
+        <img  src="assets/images/icon-reply.svg">
         <p style="display: inline;"><strong>Reply</strong></p>
       </div>
 

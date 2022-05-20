@@ -21,7 +21,7 @@ export class CommentComponent implements OnInit {
   ngOnInit(): void {
     this.widthPx = this.width + 'px'; 
     console.log(this.comment.replies);
-    this.avatarUrl = "../../assets/" + this.comment["user"]["image"]["png"].substring(2);
+    this.avatarUrl = "assets/" + this.comment["user"]["image"]["png"].substring(2);
 
     if (this.comment["user"]["username"] == 'juliusomo')
       this.isUser = true;
@@ -33,7 +33,7 @@ export class CommentComponent implements OnInit {
 
   reply(){
     this.isReply = true;
-    this.accountAvatarUrl = "../../assets/" + data["currentUser"]["image"]["png"].substring(2);
+    this.accountAvatarUrl = "assets/" + data["currentUser"]["image"]["png"].substring(2);
   }
 
   sendReply(value){
