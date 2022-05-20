@@ -199,7 +199,7 @@ function CommentComponent_div_23_Template(rf, ctx) { if (rf & 1) {
 } }
 function CommentComponent_div_27_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 37);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "img", 38);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "img", 29);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "p", 30);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "strong");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Delete");
@@ -208,8 +208,8 @@ function CommentComponent_div_27_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } }
 function CommentComponent_div_28_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 39);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "img", 40);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 38);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "img", 32);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "p", 30);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "strong");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Edit");
@@ -219,9 +219,9 @@ function CommentComponent_div_28_Template(rf, ctx) { if (rf & 1) {
 } }
 function CommentComponent_div_29_Template(rf, ctx) { if (rf & 1) {
     const _r12 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 41);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 39);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function CommentComponent_div_29_Template_div_click_0_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r12); const ctx_r11 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r11.reply(); });
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "img", 42);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "img", 34);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "p", 30);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "strong");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Reply");
@@ -231,16 +231,16 @@ function CommentComponent_div_29_Template(rf, ctx) { if (rf & 1) {
 } }
 function CommentComponent_div_33_Template(rf, ctx) { if (rf & 1) {
     const _r14 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 43);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 44);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "img", 45);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 40);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 41);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "img", 42);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 46);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "textarea", 47);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 43);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "textarea", 44);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 48);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 45);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function CommentComponent_div_33_Template_div_click_6_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r14); const ctx_r13 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r13.sendReply(ctx_r13.comment.id); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "p");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "strong");
@@ -260,7 +260,7 @@ function CommentComponent_div_33_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate1"]("@", ctx_r7.comment["user"]["username"], ". ");
 } }
 function CommentComponent_app_comment_37_Template(rf, ctx) { if (rf & 1) {
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "app-comment", 49);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "app-comment", 46);
 } if (rf & 2) {
     const rep_r15 = ctx.$implicit;
     const ctx_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
@@ -324,7 +324,7 @@ class CommentComponent {
     }
 }
 CommentComponent.ɵfac = function CommentComponent_Factory(t) { return new (t || CommentComponent)(); };
-CommentComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CommentComponent, selectors: [["app-comment"]], inputs: { comment: "comment", width: "width" }, decls: 38, vars: 16, consts: [[1, "comment"], [1, "button-group"], [1, "vote"], [1, "upvote", 3, "click"], ["src", "assets/images/icon-plus.svg"], [1, "vote-content"], [1, "downvote", 3, "click"], ["src", "assets/images/icon-minus.svg"], [1, "button-small"], ["class", "delete", 4, "ngIf"], ["class", "edit", 4, "ngIf"], ["class", "reply", 3, "click", 4, "ngIf"], [1, "content"], [1, "comment-header"], [1, "user-avatar"], [2, "width", "30px", 3, "src"], [1, "user-name"], ["class", "user-certificate", 4, "ngIf"], [1, "comment-time"], ["class", "delete button-big", 4, "ngIf"], ["class", "edit button-big", 4, "ngIf"], ["class", "reply button-big", 3, "click", 4, "ngIf"], [1, "comment-content"], ["class", "comment comment-reply-box", 4, "ngIf"], [1, "comment-reply"], [1, "comment-line"], [1, "reply-box"], [3, "comment", "width", 4, "ngFor", "ngForOf"], [1, "delete"], ["src", "assets/images/icon-delete.svg"], [2, "display", "inline"], [1, "edit"], ["src", "assets/images/icon-edit.svg"], [1, "reply", 3, "click"], ["src", "assets/images/icon-reply.svg"], [1, "user-certificate"], [1, "user-certificate-text"], [1, "delete", "button-big"], ["src", "../../assets/images/icon-delete.svg"], [1, "edit", "button-big"], ["src", "../../assets/images/icon-edit.svg"], [1, "reply", "button-big", 3, "click"], ["src", "../../assets/images/icon-reply.svg"], [1, "comment", "comment-reply-box"], [1, "account-avatar"], [3, "src"], [1, "reply-content"], [1, "reply-input", 3, "id"], [1, "reply-send", 3, "click"], [3, "comment", "width"]], template: function CommentComponent_Template(rf, ctx) { if (rf & 1) {
+CommentComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CommentComponent, selectors: [["app-comment"]], inputs: { comment: "comment", width: "width" }, decls: 38, vars: 16, consts: [[1, "comment"], [1, "button-group"], [1, "vote"], [1, "upvote", 3, "click"], ["src", "assets/images/icon-plus.svg"], [1, "vote-content"], [1, "downvote", 3, "click"], ["src", "assets/images/icon-minus.svg"], [1, "button-small"], ["class", "delete", 4, "ngIf"], ["class", "edit", 4, "ngIf"], ["class", "reply", 3, "click", 4, "ngIf"], [1, "content"], [1, "comment-header"], [1, "user-avatar"], [2, "width", "30px", 3, "src"], [1, "user-name"], ["class", "user-certificate", 4, "ngIf"], [1, "comment-time"], ["class", "delete button-big", 4, "ngIf"], ["class", "edit button-big", 4, "ngIf"], ["class", "reply button-big", 3, "click", 4, "ngIf"], [1, "comment-content"], ["class", "comment comment-reply-box", 4, "ngIf"], [1, "comment-reply"], [1, "comment-line"], [1, "reply-box"], [3, "comment", "width", 4, "ngFor", "ngForOf"], [1, "delete"], ["src", "assets/images/icon-delete.svg"], [2, "display", "inline"], [1, "edit"], ["src", "assets/images/icon-edit.svg"], [1, "reply", 3, "click"], ["src", "assets/images/icon-reply.svg"], [1, "user-certificate"], [1, "user-certificate-text"], [1, "delete", "button-big"], [1, "edit", "button-big"], [1, "reply", "button-big", 3, "click"], [1, "comment", "comment-reply-box"], [1, "account-avatar"], [3, "src"], [1, "reply-content"], [1, "reply-input", 3, "id"], [1, "reply-send", 3, "click"], [3, "comment", "width"]], template: function CommentComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
