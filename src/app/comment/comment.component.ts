@@ -20,7 +20,6 @@ export class CommentComponent implements OnInit {
 
   ngOnInit(): void {
     this.widthPx = this.width + 'px'; 
-    console.log(this.comment.replies);
     this.avatarUrl = "assets/" + this.comment["user"]["image"]["png"].substring(2);
 
     if (this.comment["user"]["username"] == 'juliusomo')
@@ -38,8 +37,6 @@ export class CommentComponent implements OnInit {
 
   sendReply(value){
     let reply = document.getElementById(value) as HTMLInputElement;
-    console.log(reply.value);
-    console.log(this.comment);
 
     let request = {
       "id": value * 6,

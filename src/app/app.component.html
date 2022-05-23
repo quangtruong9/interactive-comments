@@ -1,2 +1,13 @@
-<p>hihihihi</p>
 <app-comment *ngFor="let comment of comments" [comment]="comment" [width]="commentWidth"></app-comment>  
+
+<div class="comment-box" [style.width]="commentBoxWidth">
+    <div class="account-avatar">
+        <img src={{userAvatar}}>
+    </div>
+    <div class="reply-content">
+        <textarea id="new-comment" class="reply-input" [style.width]="replyBoxWidth"> </textarea>
+    </div>
+    <div class="reply-send" (click)="sendReply()">
+    <p><strong>REPLY</strong></p>
+    </div>
+</div>

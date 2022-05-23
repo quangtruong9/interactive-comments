@@ -1,0 +1,42 @@
+.comment-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;   
+    border-radius: 15px;
+    padding-top: 10px;
+}
+
+.reply-input{
+    font-family: 'Rubik';
+    border-radius: 15px;
+    height: 90px;
+    margin-bottom: 10px;
+    padding: 15px 10px 10px 15px;
+    color: hsl(212, 24%, 26%);
+
+}
+.account-avatar{
+    margin-left: 18px;
+}
+
+.account-avatar img{
+    width: 38px;
+}
+
+.reply-send{
+    border-radius: 15px;
+    background-color: hsl(238, 40%, 52%);
+    color: white;
+    width: 100px;
+    height: 45px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.reply-send:hover{
+    background-color:hsl(239, 57%, 85%) ;
+}
